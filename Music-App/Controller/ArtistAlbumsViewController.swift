@@ -9,7 +9,6 @@ import UIKit
 
 class ArtistAlbumsViewController: UIViewController{
     
-    
     @IBOutlet weak var albumsTableView: UITableView!
     @IBOutlet weak var artistImageView: UIImageView!
     
@@ -35,8 +34,14 @@ class ArtistAlbumsViewController: UIViewController{
             loadImage(from: artistImageUrl)
         }
 
-        tracklist = fetchData()
-        fetchDataTracklist(tracklist)
+        fetchData { tracklist in
+            if let tracklist = tracklist {
+                self.fetchDataTracklist(tracklist)
+            }else {
+                print("invalid tracklist")
+            }
+        }
+       
         
         showSecondViewController()
 
@@ -69,19 +74,21 @@ class ArtistAlbumsViewController: UIViewController{
     }
     
     
-    func fetchData() -> String {
+    func fetchData(completion: @escaping (String?) -> Void) {
         guard let url = URL(string: "https://api.deezer.com/artist/\(artistID!)") else {
-            return "invalid URL address"
+            return
         }
         NetworkService().downloadData(url: url) { (artists: ArtistPage?) in
             if let artists = artists {
                 self.tracklist = artists.tracklist
                 DispatchQueue.main.async {
                     self.albumsTableView.reloadData()
+                    completion(self.tracklist)
                 }
+            }else {
+                completion(nil)
             }
         }
-        return tracklist!
     }
     
     

@@ -25,7 +25,7 @@
 		11AF559D2A095E7200915873 /* ArtistAlbumsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF559C2A095E7200915873 /* ArtistAlbumsTableViewCell.swift */; };
 		11AF55A32A0964A500915873 /* ArtistPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF55A22A0964A500915873 /* ArtistPage.swift */; };
 		11AF55A52A09849A00915873 /* TracklistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF55A42A09849A00915873 /* TracklistModel.swift */; };
-		11AF55AF2A0BC98E00915873 /* AlbumDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF55AE2A0BC98E00915873 /* AlbumDetails.swift */; };
+		11AF55AF2A0BC98E00915873 /* SongDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF55AE2A0BC98E00915873 /* SongDetails.swift */; };
 		11AF55B32A0BDC2000915873 /* AlbumDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF55B22A0BDC2000915873 /* AlbumDetailsViewController.swift */; };
 		11AF55B52A0BDC3500915873 /* AlbumDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF55B42A0BDC3500915873 /* AlbumDetailsTableViewCell.swift */; };
 		11AF55C92A0CD38F00915873 /* FavoriteSongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF55C82A0CD38F00915873 /* FavoriteSongsViewController.swift */; };
@@ -80,7 +80,7 @@
 		11AF559C2A095E7200915873 /* ArtistAlbumsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistAlbumsTableViewCell.swift; sourceTree = "<group>"; };
 		11AF55A22A0964A500915873 /* ArtistPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPage.swift; sourceTree = "<group>"; };
 		11AF55A42A09849A00915873 /* TracklistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracklistModel.swift; sourceTree = "<group>"; };
-		11AF55AE2A0BC98E00915873 /* AlbumDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetails.swift; sourceTree = "<group>"; };
+		11AF55AE2A0BC98E00915873 /* SongDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetails.swift; sourceTree = "<group>"; };
 		11AF55B22A0BDC2000915873 /* AlbumDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewController.swift; sourceTree = "<group>"; };
 		11AF55B42A0BDC3500915873 /* AlbumDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		11AF55C82A0CD38F00915873 /* FavoriteSongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSongsViewController.swift; sourceTree = "<group>"; };
@@ -188,7 +188,7 @@
 				11AF55A22A0964A500915873 /* ArtistPage.swift */,
 				11AF55A42A09849A00915873 /* TracklistModel.swift */,
 				11AF55D02A0E05C000915873 /* CoreDataModel.xcdatamodeld */,
-				11AF55AE2A0BC98E00915873 /* AlbumDetails.swift */,
+				11AF55AE2A0BC98E00915873 /* SongDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -507,7 +507,7 @@
 				11AF55932A09386800915873 /* CategoryNamesViewController.swift in Sources */,
 				11AF55552A08E67300915873 /* AppDelegate.swift in Sources */,
 				11AF55992A093A8F00915873 /* CategoryNames.swift in Sources */,
-				11AF55AF2A0BC98E00915873 /* AlbumDetails.swift in Sources */,
+				11AF55AF2A0BC98E00915873 /* SongDetails.swift in Sources */,
 				11AF559B2A095E5800915873 /* ArtistAlbumsViewController.swift in Sources */,
 				11AF55912A09385300915873 /* CategoryNameCollectionViewCell.swift in Sources */,
 				11AF55A52A09849A00915873 /* TracklistModel.swift in Sources */,

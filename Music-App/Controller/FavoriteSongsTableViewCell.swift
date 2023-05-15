@@ -57,6 +57,7 @@ class FavoriteSongsTableViewCell: UITableViewCell {
             FavoriteSongsService.addFavoriteSong(song)
         }
         isChecked = !isChecked
+        
         favoriteButton.setImage(UIImage(systemName: isChecked ? "suit.heart.fill" : "suit.heart"), for: .normal)
         onFavoriteButtonTapped?()
         FavoriteSongsService.changeFavoriteStatus = true
