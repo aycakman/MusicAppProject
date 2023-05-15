@@ -87,23 +87,4 @@ extension CategoryNamesViewController: UICollectionViewDelegate{
         performSegue(withIdentifier: "toGoDetailsOfArtist", sender: nil)
     }
 }
-/*
- func fetchData() {
-     guard let genreID = genreID else { return }
-     print("genreID: \(genreID)") //for control
-     NetworkManager.shared.fetchArtistGenre(for: String(genreID)) { result in
-         switch result {
-         case .success(let categoryNames):
-             self.artistNames = categoryNames.data
-             DispatchQueue.main.async {
-                 self.categoryNameCollectionView.reloadData()
-             }
-         case .failure(let error):
-             print("failed to fetch data: \(error)")
-         }
-     }
-     
-   
- }
 
- */

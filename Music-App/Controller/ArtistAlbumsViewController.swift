@@ -118,7 +118,7 @@ class ArtistAlbumsViewController: UIViewController{
                 do {
                     let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
                     if let dictionary = jsonObject as? [String: Any], let releaseDate = dictionary["release_date"] as? String {
-                        print(releaseDate) //buraya releaseDate değeri geliyor
+                        print(releaseDate) 
                         completion(releaseDate)
                     } else {
                         print("Error parsing release date.")

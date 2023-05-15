@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "CoreDataModel") // ModelName'ini sizin .xcdatamodeld dosyanızın adı ile değiştirin
+        let container = NSPersistentContainer(name: "CoreDataModel") 
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 fatalError("error \(error), \(error.userInfo)")

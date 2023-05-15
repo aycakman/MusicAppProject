@@ -13,7 +13,6 @@ class MusicCategoriesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var musicCategoriesImageView: UIImageView!
     @IBOutlet weak var musicCategoriesLabel: UILabel!
     
-    
     override func awakeFromNib() {
   
     }

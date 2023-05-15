@@ -72,27 +72,3 @@ class AlbumDetailsTableViewCell: UITableViewCell {
 }
 
 
-
-
-/*
- func setup(with song : SongStruct ) {
-     self.song = song
-     songNameLabel.text = song.title
-     let convertDuration = Int(song.duration)
-     songDurationLabel.text = "\(convertDuration / 60):\(convertDuration % 60)''"
-     if let imageUrl = URL(string: song.album.picture) {
-         URLSession.shared.dataTask(with: imageUrl) { data, response, error in
-             if let error = error {
-                 print("Error downloading song image: \(error)")
-             }else if let data = data {
-                 DispatchQueue.main.async {
-                     self.songImageView.image = UIImage(data: data)
-                 }
-             }
-         }.resume()
-     }
-     
-     isChecked = FavoriteListService.isFavoriteSong(song.id)
-     favoriteButton.setImage(UIImage(systemName: isChecked ? "suit.heart.fill" : "suit.heart"), for: .normal)
- }
- */

@@ -99,20 +99,4 @@ extension MusicCategoriesViewController: UITabBarControllerDelegate {
         }
     }
 }
-/*
- 
- func fetchData() {
-     NetworkManager.shared.fetchGenre { (result) in
-         switch result {
-         case .success(let categories):
-             self.musicCategory = categories.data
-             DispatchQueue.main.async {
-                 self.musicCategoryCollectionView.reloadData()
-             }
-         case .failure(let error):
-             print("Failed to fetch data: \(error)")
-         }
-     }
- }
-   
- */
+
