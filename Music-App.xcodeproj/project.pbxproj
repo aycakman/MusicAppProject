@@ -152,14 +152,13 @@
 		11AF55532A08E67300915873 /* Music-App */ = {
 			isa = PBXGroup;
 			children = (
+				11AF56A92A12148800915873 /* View */,
 				11AF558D2A09270700915873 /* Service */,
 				11AF558C2A08F70E00915873 /* Controller */,
 				11AF558A2A08F6F100915873 /* Model */,
-				11AF555A2A08E67300915873 /* Main.storyboard */,
 				11AF555D2A08E67400915873 /* Assets.xcassets */,
 				11AF555F2A08E67400915873 /* LaunchScreen.storyboard */,
 				11AF55622A08E67400915873 /* Info.plist */,
-				11AF55D02A0E05C000915873 /* CoreDataModel.xcdatamodeld */,
 			);
 			path = "Music-App";
 			sourceTree = "<group>";
@@ -188,6 +187,7 @@
 				11AF55982A093A8F00915873 /* CategoryNames.swift */,
 				11AF55A22A0964A500915873 /* ArtistPage.swift */,
 				11AF55A42A09849A00915873 /* TracklistModel.swift */,
+				11AF55D02A0E05C000915873 /* CoreDataModel.xcdatamodeld */,
 				11AF55AE2A0BC98E00915873 /* AlbumDetails.swift */,
 			);
 			path = Model;
@@ -220,6 +220,14 @@
 				11AF55CE2A0D330100915873 /* MusicPlayerManager.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		11AF56A92A12148800915873 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11AF555A2A08E67300915873 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		447B63F3623AC14EA9C8BBFE /* Pods */ = {
