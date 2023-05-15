@@ -37,10 +37,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qlo-TZ-thl">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QQS-kN-Mct">
                                                     <rect key="frame" x="15" y="7" width="129" height="112"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MLC-IW-Uxd">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MLC-IW-Uxd">
                                                             <rect key="frame" x="0.0" y="0.0" width="129" height="112"/>
                                                         </imageView>
                                                     </subviews>
@@ -66,17 +66,17 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="qlo-TZ-thl" firstAttribute="leading" secondItem="Ja3-yE-xv6" secondAttribute="leadingMargin" constant="-5" id="00x-0S-kNs"/>
+                                                <constraint firstItem="QQS-kN-Mct" firstAttribute="leading" secondItem="Ja3-yE-xv6" secondAttribute="leading" constant="15" id="0Ub-mO-oK9"/>
                                                 <constraint firstItem="6Wu-20-MVw" firstAttribute="top" secondItem="Ja3-yE-xv6" secondAttribute="topMargin" constant="33" id="8ky-JV-ARF"/>
                                                 <constraint firstItem="uf7-mj-i31" firstAttribute="top" secondItem="Ja3-yE-xv6" secondAttribute="topMargin" id="ItH-9U-rQJ"/>
-                                                <constraint firstItem="uf7-mj-i31" firstAttribute="leading" secondItem="qlo-TZ-thl" secondAttribute="trailing" constant="20" id="OND-Mf-Rdy"/>
                                                 <constraint firstItem="uf7-mj-i31" firstAttribute="leading" secondItem="31P-9e-Kit" secondAttribute="leading" id="QDv-z7-kEY"/>
-                                                <constraint firstItem="qlo-TZ-thl" firstAttribute="centerY" secondItem="Ja3-yE-xv6" secondAttribute="centerY" id="QEp-65-oOd"/>
                                                 <constraint firstItem="6Wu-20-MVw" firstAttribute="leading" secondItem="31P-9e-Kit" secondAttribute="trailing" constant="-5" id="RaH-P6-Udr"/>
                                                 <constraint firstItem="31P-9e-Kit" firstAttribute="top" secondItem="uf7-mj-i31" secondAttribute="bottom" constant="8" symbolic="YES" id="Uh8-74-UM1"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="31P-9e-Kit" secondAttribute="bottom" constant="12" id="fIH-Ko-TOk"/>
-                                                <constraint firstItem="qlo-TZ-thl" firstAttribute="top" secondItem="Ja3-yE-xv6" secondAttribute="topMargin" constant="-4" id="kOq-qW-TTh"/>
+                                                <constraint firstItem="QQS-kN-Mct" firstAttribute="top" secondItem="Ja3-yE-xv6" secondAttribute="top" constant="7" id="gBM-rV-jdj"/>
+                                                <constraint firstItem="uf7-mj-i31" firstAttribute="leading" secondItem="QQS-kN-Mct" secondAttribute="trailing" constant="20" id="mMK-TC-gaf"/>
                                                 <constraint firstItem="6Wu-20-MVw" firstAttribute="leading" secondItem="uf7-mj-i31" secondAttribute="trailing" constant="-5" id="nbt-lV-FiH"/>
+                                                <constraint firstAttribute="bottom" secondItem="QQS-kN-Mct" secondAttribute="bottom" constant="7" id="te3-ak-1JA"/>
                                                 <constraint firstItem="uf7-mj-i31" firstAttribute="leading" secondItem="Ja3-yE-xv6" secondAttribute="leading" constant="164" id="tw0-gz-M5U"/>
                                             </constraints>
                                         </tableViewCellContentView>

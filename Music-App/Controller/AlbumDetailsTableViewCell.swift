@@ -21,7 +21,8 @@ class AlbumDetailsTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        songImageView.layer.cornerRadius = 10
+        songImageView.clipsToBounds = true
     }
     
     func setup(with song : SongStruct ) {

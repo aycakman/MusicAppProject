@@ -13,10 +13,9 @@ class ArtistAlbumsTableViewCell: UITableViewCell {
     @IBOutlet weak var albumDatesLabel: UILabel!
     @IBOutlet weak var albumImageView: UIImageView!
     
-
     override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+        albumImageView.layer.cornerRadius = 10
+        albumImageView.clipsToBounds = true
     }
 
     func setup(with album: Album, releaseDate: String?) {

@@ -20,7 +20,8 @@ class FavoriteSongsTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        favoriteSongImageView.layer.cornerRadius = 10
+        favoriteSongImageView.clipsToBounds = true
     }
     
     func setup(with song : SongStruct ) {

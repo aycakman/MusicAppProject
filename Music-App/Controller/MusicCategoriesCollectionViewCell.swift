@@ -14,7 +14,8 @@ class MusicCategoriesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var musicCategoriesLabel: UILabel!
     
     override func awakeFromNib() {
-  
+        musicCategoriesImageView.layer.cornerRadius = 10
+        musicCategoriesImageView.clipsToBounds = true
     }
     
     func setup(with musicCategories: Data) {
