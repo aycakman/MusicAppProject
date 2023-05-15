@@ -1,0 +1,6 @@
+framework module Pods_Music_App_Music_AppUITests {
+  umbrella header "Pods-Music-App-Music-AppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
