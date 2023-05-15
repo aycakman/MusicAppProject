@@ -33,7 +33,10 @@ class CategoryNamesViewController: UIViewController {
     }
   
     func fetchData() {
-        guard let genreID = genreID else { return }
+        guard let genreID = genreID else {
+            print("invalid URL address")
+            return
+        }
         let url = URL(string: "https://api.deezer.com/genre/\(genreID)/artists")!
         NetworkService().downloadData(url: url) { (categoryNames: CategoryNames?) in
             if let categoryNames = categoryNames {

@@ -42,8 +42,11 @@ class AlbumDetailsViewController: UIViewController{
     }
     
     func fetchData(_ albumID: Int) {
-        let url = URL(string: "https://api.deezer.com/album/\(albumID)")
-        NetworkService().downloadData(url: url!) { [self] (songModel: SongModelStruct?) in
+        guard let url = URL(string: "https://api.deezer.com/album/\(albumID)") else {
+            print("invalid URL address")
+            return
+        }
+        NetworkService().downloadData(url: url) { [self] (songModel: SongModelStruct?) in
             if let songModel = songModel {
                 DispatchQueue.main.async { [self] in
                     self.onReleaseDateReceived?(albumID, songModel.releaseDate)

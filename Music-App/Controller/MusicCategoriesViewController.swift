@@ -34,7 +34,10 @@ class MusicCategoriesViewController: UIViewController {
    
     
     func fetchData() {
-        let url = URL(string: "https://api.deezer.com/genre")!
+        guard let url = URL(string: "https://api.deezer.com/genre") else {
+            print("invalid URL address")
+            return
+        }
         NetworkService().downloadData(url: url) { (category: MusicCategory?) in
             if let category = category {
                 self.musicCategory = category.data

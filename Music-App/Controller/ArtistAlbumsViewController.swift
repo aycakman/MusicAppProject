@@ -70,7 +70,9 @@ class ArtistAlbumsViewController: UIViewController{
     
     
     func fetchData() -> String {
-        let url = URL(string: "https://api.deezer.com/artist/\(artistID!)")!
+        guard let url = URL(string: "https://api.deezer.com/artist/\(artistID!)") else {
+            return "invalid URL address"
+        }
         NetworkService().downloadData(url: url) { (artists: ArtistPage?) in
             if let artists = artists {
                 self.tracklist = artists.tracklist
@@ -84,7 +86,10 @@ class ArtistAlbumsViewController: UIViewController{
     
     
     func fetchDataTracklist(_ tracklist: String) {
-        let url = URL(string: self.tracklist)!
+        guard let url = URL(string: self.tracklist) else {
+            print("invalid URL address")
+            return
+        }
         NetworkService().downloadData(url: url) { (tracklists: TracklistModel?) in
             if let tracklists = tracklists {
                 for track in tracklists.data {
@@ -109,8 +114,11 @@ class ArtistAlbumsViewController: UIViewController{
     }
     
     func fetchReleaseDate(for albumID: Int, completion: @escaping (String?) -> Void) {
-        let url = URL(string: "https://api.deezer.com/album/\(albumID)")
-        URLSession.shared.dataTask(with: url!) { (data, response, error) in
+        guard let url = URL(string: "https://api.deezer.com/album/\(albumID)") else {
+            print("invalid URL addres")
+            return
+        }
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
                 print("Error fetching release date: \(error)")
                 completion(nil)
