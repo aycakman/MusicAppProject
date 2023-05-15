@@ -31,7 +31,7 @@ class ArtistAlbumsTableViewCell: UITableViewCell {
         let imageUrlString = album.coverMedium
         let processor = DownsamplingImageProcessor(size: albumImageView.bounds.size)
         albumImageView.kf.indicatorType = .activity
-        if let imageUrl = URL(string: imageUrlString) {
+        if let imageUrl = URL(string: imageUrlString ?? "nilImage") {
             albumImageView.kf.setImage(with: imageUrl,
                                        placeholder: UIImage(named: "placeholderImage"),
                                        options: [

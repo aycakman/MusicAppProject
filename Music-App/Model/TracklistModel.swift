@@ -14,18 +14,16 @@ struct TracklistModel: Codable {
 struct TracklistData: Codable {
     let id: Int
     let title, titleShort: String
-    let link: String
     let duration: Int
     let preview: String?
-    let contributors: [Contributor]
     let artist: Artist
     let album: Album
 
     enum CodingKeys: String, CodingKey {
         case id, title
         case titleShort = "title_short"
-        case link, duration
-        case preview, contributors
+        case duration
+        case preview
         case artist, album
     }
 }
@@ -34,7 +32,7 @@ struct Album: Codable {
     let id: Int
     let title: String
     let cover: String
-    let coverSmall, coverMedium, coverBig, coverXl: String
+    let coverSmall, coverMedium, coverBig, coverXl: String?
     let tracklist: String
 
     enum CodingKeys: String, CodingKey {
@@ -54,23 +52,5 @@ struct Artist: Codable {
 }
 
 
-
-struct Contributor: Codable {
-    let id: Int
-    let name: String
-    let picture: String
-    let pictureSmall, pictureMedium, pictureBig, pictureXl: String
-    let tracklist: String
-   
-
-    enum CodingKeys: String, CodingKey {
-        case id, name, picture
-        case pictureSmall = "picture_small"
-        case pictureMedium = "picture_medium"
-        case pictureBig = "picture_big"
-        case pictureXl = "picture_xl"
-        case tracklist
-    }
-}
 
 
